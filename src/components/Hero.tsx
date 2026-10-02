@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { ArrowDown, ExternalLink, MapPin, TrendingDown, RefreshCw, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -32,7 +33,7 @@ const Hero = () => {
 
           {/* Main Title & Value Proposition Split */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <div className="lg:col-span-12 flex flex-col gap-5">
+            <div className="lg:col-span-8 flex flex-col gap-5 order-2 lg:order-1">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy-dark tracking-tight leading-tight">
                 Sreejith Vasudevan
               </h1>
@@ -62,10 +63,23 @@ const Hero = () => {
                   <span>LinkedIn</span>
                   <ExternalLink size={16} className="text-text-muted" />
                 </a>
-                <div className="flex items-center gap-1.5 text-xs text-text-muted ml-0 sm:ml-2">
+                <div className="flex items-center gap-1.5 text-xs text-text-muted ml-0 sm:ml-2 mt-2 sm:mt-0">
                   <MapPin size={18} className="text-primary" />
                   <span>Kochi, India / Open to remote & Kochi opportunities</span>
                 </div>
+              </div>
+            </div>
+            
+            {/* Profile Photo */}
+            <div className="lg:col-span-4 flex justify-center lg:justify-end order-1 lg:order-2 mb-6 lg:mb-0">
+              <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                <Image
+                  src="/profile.jpg"
+                  alt="Sreejith Vasudevan"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
