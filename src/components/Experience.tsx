@@ -48,14 +48,20 @@ const Experience = () => {
               </div>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed mb-4">
-              Leading the architecture and delivery of enterprise AI, document intelligence, and MLOps solutions for insurance and claims processing.
+              Lead the architecture and delivery of production-grade AI, Generative AI, machine learning, document intelligence, and MLOps solutions for enterprise insurance and claims-processing use cases.
             </p>
             <ul className="list-disc pl-5 flex flex-col gap-1 text-sm text-text-secondary">
-              <li>Combined CLIP classification, Azure Document Intelligence OCR, and Databricks-hosted LLMs for document extraction and validation.</li>
-              <li>Shipped a Databricks Asset Bundle for intelligent document processing across bronze, silver, and gold data layers.</li>
-              <li>Built agentic claims-document workflows and AI-assisted long-term care decision support.</li>
-              <li>Led a three-engineer team delivering an AI-powered technical assessment platform.</li>
+              <li>Architected and delivered an enterprise document intelligence platform for classifying, processing, extracting, and validating information from insurance invoices and proof-of-payment documents.</li>
+              <li>Integrated CLIP-based document classification, Azure Document Intelligence OCR, and Databricks-hosted LLM capabilities for intelligent information extraction.</li>
+              <li>Designed confidence-scoring, schema-validation, table-extraction, multi-page document handling, and deduplication capabilities.</li>
+              <li>Designed and shipped a Databricks Asset Bundle for Intelligent Document Processing, codifying a full medallion-architecture data platform (bronze/silver/gold) as version-controlled YAML and enabling one-command, multi-environment deploys via the Databricks CLI.</li>
+              <li>Developed AI-assisted decision-support capabilities for long-term care claims using Azure Databricks and Azure OpenAI.</li>
+              <li>Built agentic document-processing workflows using Azure AI Studio to automate claims-document extraction and downstream analysis.</li>
+              <li>Led a three-engineer team in designing and delivering an AI-powered technical interview assessment platform with job-description and resume processing, AI-generated technical questions, human approval workflows, candidate assessment, and automated scoring.</li>
+              <li>Partnered with business, architecture, engineering, and delivery stakeholders to convert business requirements into scalable AI solutions.</li>
+              <li>Created architecture documentation, deployment procedures, operational guides, and technical standards for enterprise adoption.</li>
             </ul>
+
           </div>
         </motion.div>
 
@@ -84,12 +90,14 @@ const Experience = () => {
               </div>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed mb-4">
-              Progressed from Team Lead to Assistant Manager and Associate Manager in Audit Risk Analytics, then led Azure DevOps analytics for a global platform migration.
+              Progressed from Team Lead to Associate Manager in Audit Risk Analytics, then led Azure DevOps analytics for a global Adobe Experience Manager to Unified Platform migration.
             </p>
             <ul className="list-disc pl-5 flex flex-col gap-1 text-sm text-text-secondary mb-4">
-              <li>Created Python automation delivering approximately $45,000 in annual savings and migrated 100+ SAS production processes.</li>
-              <li>Improved development efficiency by approximately 40% through reusable Python libraries.</li>
-              <li>Reduced manual reporting effort by approximately 80% using Power BI and Power Automate.</li>
+              <li>Led analytics and monitoring for a global Adobe Experience Manager migration, improving leadership visibility into progress, delivery risks, and team velocity.</li>
+              <li>Developed interactive Power BI dashboards and automated daily metrics extraction using Power Automate, reducing manual reporting effort by approximately 80%.</li>
+              <li>Developed a fully automated Python analytics application that generated approximately USD 45,000 in annual cost savings.</li>
+              <li>Migrated more than 100 production SAS processes to Python and developed reusable Python libraries, improving development efficiency by approximately 40%.</li>
+              <li>Designed predictive models, statistical frameworks, and quartile-based metrics in partnership with Audit Quality stakeholders.</li>
             </ul>
             <div className="flex flex-col gap-1 text-xs text-text-secondary border-t border-border-subtle pt-3">
               <div className="flex justify-between"><strong>Data Scientist & Azure DevOps Analytics Lead</strong><span>May 2024 — Nov 2024</span></div>
@@ -124,9 +132,12 @@ const Experience = () => {
                 <span>Jun 2014 — Feb 2019</span>
               </div>
             </div>
-            <p className="text-sm text-text-secondary leading-relaxed">
-              Led insurance claims analytics supporting UK actuarial, pricing, and management teams. Developed predictive models for reserves, claims lifecycle, inflation, and customer segmentation, alongside reusable SAS automation and KPI reporting.
-            </p>
+            <ul className="list-disc pl-5 flex flex-col gap-1 text-sm text-text-secondary">
+              <li>Led analytics initiatives across personal lines, motor, commercial, and specialty insurance claims for UK-based actuarial, pricing, and claims teams.</li>
+              <li>Developed predictive models for reserve estimation, claim lifecycle prediction, claims inflation forecasting, development triangles, and customer segmentation.</li>
+              <li>Designed reusable SAS macros and automated analytics and reporting components, delivering monthly financial KPI dashboards to senior management.</li>
+              <li>Improved analytical consistency and reporting turnaround through automation and reusable development standards.</li>
+            </ul>
           </div>
         </motion.div>
 
@@ -154,9 +165,11 @@ const Experience = () => {
                 <span>Mar 2012 — May 2014</span>
               </div>
             </div>
-            <p className="text-sm text-text-secondary leading-relaxed">
-              Developed logistic regression models for credit-card fraud detection and creditworthiness assessment, with repeatable workflows for data quality, feature selection, and financial risk analysis.
-            </p>
+            <ul className="list-disc pl-5 flex flex-col gap-1 text-sm text-text-secondary">
+              <li>Developed logistic-regression models for credit-card fraud detection and customer creditworthiness assessment.</li>
+              <li>Performed exploratory data analysis, feature selection, outlier detection, missing-value treatment, and data-quality validation.</li>
+              <li>Collaborated with business and technology teams to translate financial risk requirements into repeatable analytical workflows for decision-making.</li>
+            </ul>
           </div>
         </motion.div>
 
@@ -184,9 +197,11 @@ const Experience = () => {
                 <span>Aug 2010 — Feb 2012</span>
               </div>
             </div>
-            <p className="text-sm text-text-secondary leading-relaxed">
-              Built predictive models to identify high-cost healthcare members, analyzed Medicare and Medicaid claims, and managed scheduled ETL pipelines for insurance data warehouses.
-            </p>
+            <ul className="list-disc pl-5 flex flex-col gap-1 text-sm text-text-secondary">
+              <li>Developed predictive models for disease-management organizations to identify high-cost patients.</li>
+              <li>Analyzed Medicare and Medicaid healthcare claims data to identify cost drivers, variable relationships, and high-cost member segments.</li>
+              <li>Managed scheduled ETL pipelines for insurance policy and claims data, supporting regular data loading into enterprise data-warehouse environments.</li>
+            </ul>
           </div>
         </motion.div>
 

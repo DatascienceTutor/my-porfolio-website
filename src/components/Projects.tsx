@@ -9,11 +9,13 @@ const projectsData = [
   {
     title: "Enterprise Agentic RAG",
     tagline: "Agentic AI / Knowledge retrieval",
-    description: "An HR and company policy assistant that combines document retrieval with employee-record tools. A LangGraph agent selects the relevant tool to answer each question using company context.",
+    description: "An Enterprise Retrieval-Augmented Generation (RAG) assistant built with Streamlit, LangChain/LangGraph, OpenAI, and Pinecone. This application acts as an intelligent HR and company policy assistant, featuring simulated Single Sign-On (SSO) with Role-Based Access Control (RBAC), and agentic tool use.",
     bullets: [
-      "Hybrid retrieval with OpenAI embeddings and BM25 sparse vectors in Pinecone",
-      "Policy citations, response feedback, and stored corrections added to the agent prompt",
-      "Simulated Employee and HR sign-in, with HR-only knowledge-base uploads"
+      "Hybrid Search (Dense + Sparse): Uses Pinecone's dotproduct metric to combine OpenAI dense semantic embeddings with a custom pure-Python BM25 sparse encoder for highly accurate retrieval.",
+      "Agentic Assistant: Built with LangGraph, dynamically deciding when to use tools (get_my_employment_records, search_company_policies) based on context.",
+      "Feedback Loop: Users can thumbs-up or thumbs-down AI responses. Corrections are saved to SQLite and injected into the prompt to prevent repeating mistakes.",
+      "Automated Citations: Provides clickable markdown citations linking directly to the source policy documents.",
+      "Simulated SSO & RBAC: Enforced strict access control where only HR personnel can access the Knowledge Base Management section."
     ],
     tech: ["Python", "LangGraph", "LangChain", "Pinecone", "OpenAI", "Streamlit", "SQLite"],
     linkText: "View agentic-rag on GitHub",
@@ -35,7 +37,14 @@ const projectsData = [
   {
     title: "HireFlow",
     tagline: "Talent assessment",
-    description: "An AI-powered technical interview platform with job-specific question generation, automated answer scoring, qualitative feedback, and separate manager and candidate workflows.",
+    description: "A multi-tenant, AI-driven web application built with Streamlit designed to streamline the technical hiring process. It leverages OpenAI to generate interview questions on-demand and automatically score candidate answers with detailed feedback.",
+    bullets: [
+      "On-Demand AI Question Generation: Calls OpenAI live using the uploaded Job Description to generate unique technical questions.",
+      "Automated Review Dashboard: Calculates average scores and provides managers with question-by-question breakdowns, LLM scores, and qualitative AI feedback.",
+      "Multi-Tenant Data Isolation: Secure role-based access control (RBAC) ensuring managers only see their own jobs, candidates, and interview results.",
+      "Candidate Onboarding: Automatically creates candidate and interview records upon uploading a candidate's resume (PDF).",
+      "Architecture: Uses SQLAlchemy as an ORM with highly relational models and automatic data cleanup."
+    ],
     tech: ["Python", "Streamlit", "OpenAI", "SQLAlchemy"],
     linkText: "View HireFlow on GitHub",
     linkUrl: "https://github.com/DatascienceTutor/hireflow"
@@ -43,7 +52,13 @@ const projectsData = [
   {
     title: "PDF Chatbot",
     tagline: "Document intelligence",
-    description: "Ask questions across uploaded PDFs. Document text is extracted, chunked, and embedded in Chroma, with GPT-4 answering from the retrieved context.",
+    description: "An AI application that allows users to ask questions across multiple uploaded PDFs simultaneously. The application extracts text, generates embeddings, and utilizes a ConversationalRetrievalChain to provide accurate, context-aware answers.",
+    bullets: [
+      "Text Extraction & Chunking: Extracts text from all pages of uploaded PDFs and splits it using RecursiveCharacterTextSplitter for optimal embedding.",
+      "Vector Database Integration: Uses OpenAIEmbeddings to convert text chunks into dense vectors, storing them in a Chroma vector store for fast similarity search.",
+      "Conversational QA: Utilizes ChatOpenAI with a ConversationalRetrievalChain to retrieve relevant context and generate coherent answers.",
+      "Contextual Memory: Maintains chat history within the Streamlit session state, allowing for contextual follow-up questions."
+    ],
     tech: ["LangChain", "OpenAI", "Chroma", "Streamlit"],
     linkText: "View PDF Chatbot on GitHub",
     linkUrl: "https://github.com/DatascienceTutor/pdfchatbot"
